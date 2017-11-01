@@ -1,0 +1,14 @@
+{
+  "name": "embed-pdfjs-dist",
+  "version": "2.0.87",
+  "main": [
+    "build/pdf.js",
+    "build/pdf.worker.js"
+  ],
+  "ignore": [],
+  "keywords": [
+    "Mozilla",
+    "pdf",
+    "pdf.js"
+  ]
+}
