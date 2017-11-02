@@ -17,11 +17,11 @@
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
 	else if(typeof define === 'function' && define.amd)
-		define("pdfjs-dist/web/compatibility", [], factory);
+		define("embed-pdfjs-dist/web/compatibility", [], factory);
 	else if(typeof exports === 'object')
-		exports["pdfjs-dist/web/compatibility"] = factory();
+		exports["embed-pdfjs-dist/web/compatibility"] = factory();
 	else
-		root["pdfjs-dist/web/compatibility"] = factory();
+		root["embed-pdfjs-dist/web/compatibility"] = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache

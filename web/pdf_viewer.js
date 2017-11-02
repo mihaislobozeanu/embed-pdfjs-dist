@@ -17,11 +17,11 @@
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
 	else if(typeof define === 'function' && define.amd)
-		define("pdfjs-dist/web/pdf_viewer", [], factory);
+		define("embed-pdfjs-dist/web/pdf_viewer", [], factory);
 	else if(typeof exports === 'object')
-		exports["pdfjs-dist/web/pdf_viewer"] = factory();
+		exports["embed-pdfjs-dist/web/pdf_viewer"] = factory();
 	else
-		root["pdfjs-dist/web/pdf_viewer"] = root.pdfjsDistWebPdfViewer = factory();
+		root["embed-pdfjs-dist/web/pdf_viewer"] = root.embedPdfjsDistWebPdfViewer = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -96,8 +96,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 var pdfjsLib;
-if (typeof window !== 'undefined' && window['pdfjs-dist/build/pdf']) {
-  pdfjsLib = window['pdfjs-dist/build/pdf'];
+if (typeof window !== 'undefined' && window['embed-pdfjs-dist/build/pdf']) {
+  pdfjsLib = window['embed-pdfjs-dist/build/pdf'];
 } else {
   pdfjsLib = require('../build/pdf.js');
 }

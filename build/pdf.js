@@ -17,11 +17,11 @@
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
 	else if(typeof define === 'function' && define.amd)
-		define("pdfjs-dist/build/pdf", [], factory);
+		define("embed-pdfjs-dist/build/pdf", [], factory);
 	else if(typeof exports === 'object')
-		exports["pdfjs-dist/build/pdf"] = factory();
+		exports["embed-pdfjs-dist/build/pdf"] = factory();
 	else
-		root["pdfjs-dist/build/pdf"] = root.pdfjsDistBuildPdf = factory();
+		root["embed-pdfjs-dist/build/pdf"] = root.embedPdfjsDistBuildPdf = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -3469,7 +3469,7 @@ var useRequireEnsure = false;
     useRequireEnsure = true;
   }
   if (typeof requirejs !== 'undefined' && requirejs.toUrl) {
-    workerSrc = requirejs.toUrl('pdfjs-dist/build/pdf.worker.js');
+    workerSrc = requirejs.toUrl('embed-pdfjs-dist/build/pdf.worker.js');
   }
   var dynamicLoaderSupported = typeof requirejs !== 'undefined' && requirejs.load;
   fakeWorkerFilesLoader = useRequireEnsure ? function (callback) {
@@ -3479,7 +3479,7 @@ var useRequireEnsure = false;
       callback(worker.WorkerMessageHandler);
     });
   } : dynamicLoaderSupported ? function (callback) {
-    requirejs(['pdfjs-dist/build/pdf.worker'], function (worker) {
+    requirejs(['embed-pdfjs-dist/build/pdf.worker'], function (worker) {
       callback(worker.WorkerMessageHandler);
     });
   } : null;
@@ -3580,7 +3580,7 @@ function _fetchDocument(worker, source, pdfDataRangeTransport, docId) {
   if (worker.destroyed) {
     return Promise.reject(new Error('Worker was destroyed'));
   }
-  var apiVersion = '2.0.87';
+  var apiVersion = '2.0.88';
   source.disableAutoFetch = (0, _dom_utils.getDefaultSetting)('disableAutoFetch');
   source.disableStream = (0, _dom_utils.getDefaultSetting)('disableStream');
   source.chunkedViewerLoading = !!pdfDataRangeTransport;
@@ -4943,8 +4943,8 @@ var InternalRenderTask = function InternalRenderTaskClosure() {
 }();
 var version, build;
 {
-  exports.version = version = '2.0.87';
-  exports.build = build = 'b46443f0';
+  exports.version = version = '2.0.88';
+  exports.build = build = '984dd29b';
 }
 exports.getDocument = getDocument;
 exports.LoopbackPort = LoopbackPort;
@@ -8009,8 +8009,8 @@ exports.SVGGraphics = SVGGraphics;
 "use strict";
 
 
-var pdfjsVersion = '2.0.87';
-var pdfjsBuild = 'b46443f0';
+var pdfjsVersion = '2.0.88';
+var pdfjsBuild = '984dd29b';
 var pdfjsSharedUtil = __w_pdfjs_require__(0);
 var pdfjsDisplayGlobal = __w_pdfjs_require__(122);
 var pdfjsDisplayAPI = __w_pdfjs_require__(70);
@@ -14314,8 +14314,8 @@ if (!_global_scope2.default.PDFJS) {
 }
 var PDFJS = _global_scope2.default.PDFJS;
 {
-  PDFJS.version = '2.0.87';
-  PDFJS.build = 'b46443f0';
+  PDFJS.version = '2.0.88';
+  PDFJS.build = '984dd29b';
 }
 PDFJS.pdfBug = false;
 if (PDFJS.verbosity !== undefined) {

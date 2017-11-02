@@ -17,11 +17,11 @@
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
 	else if(typeof define === 'function' && define.amd)
-		define("pdfjs-dist/build/pdf.combined", [], factory);
+		define("embed-pdfjs-dist/build/pdf.combined", [], factory);
 	else if(typeof exports === 'object')
-		exports["pdfjs-dist/build/pdf.combined"] = factory();
+		exports["embed-pdfjs-dist/build/pdf.combined"] = factory();
 	else
-		root["pdfjs-dist/build/pdf.combined"] = root.pdfjsDistBuildPdfCombined = factory();
+		root["embed-pdfjs-dist/build/pdf.combined"] = root.embedPdfjsDistBuildPdfCombined = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -11400,7 +11400,7 @@ function _fetchDocument(worker, source, pdfDataRangeTransport, docId) {
   if (worker.destroyed) {
     return Promise.reject(new Error('Worker was destroyed'));
   }
-  var apiVersion = '2.0.87';
+  var apiVersion = '2.0.88';
   source.disableAutoFetch = (0, _dom_utils.getDefaultSetting)('disableAutoFetch');
   source.disableStream = (0, _dom_utils.getDefaultSetting)('disableStream');
   source.chunkedViewerLoading = !!pdfDataRangeTransport;
@@ -12676,8 +12676,8 @@ var InternalRenderTask = function InternalRenderTaskClosure() {
 }();
 var version, build;
 {
-  exports.version = version = '2.0.87';
-  exports.build = build = 'b46443f0';
+  exports.version = version = '2.0.88';
+  exports.build = build = '984dd29b';
 }
 exports.getDocument = getDocument;
 exports.LoopbackPort = LoopbackPort;
@@ -29793,8 +29793,8 @@ exports.SVGGraphics = SVGGraphics;
 "use strict";
 
 
-var pdfjsVersion = '2.0.87';
-var pdfjsBuild = 'b46443f0';
+var pdfjsVersion = '2.0.88';
+var pdfjsBuild = '984dd29b';
 var pdfjsSharedUtil = __w_pdfjs_require__(0);
 var pdfjsDisplayGlobal = __w_pdfjs_require__(138);
 var pdfjsDisplayAPI = __w_pdfjs_require__(76);
@@ -36098,8 +36098,8 @@ if (!_global_scope2.default.PDFJS) {
 }
 var PDFJS = _global_scope2.default.PDFJS;
 {
-  PDFJS.version = '2.0.87';
-  PDFJS.build = 'b46443f0';
+  PDFJS.version = '2.0.88';
+  PDFJS.build = '984dd29b';
 }
 PDFJS.pdfBug = false;
 if (PDFJS.verbosity !== undefined) {
@@ -39029,7 +39029,7 @@ var WorkerMessageHandler = {
     var cancelXHRs = null;
     var WorkerTasks = [];
     var apiVersion = docParams.apiVersion;
-    var workerVersion = '2.0.87';
+    var workerVersion = '2.0.88';
     if (apiVersion !== null && apiVersion !== workerVersion) {
       throw new Error('The API version "' + apiVersion + '" does not match ' + ('the Worker version "' + workerVersion + '".'));
     }

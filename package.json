@@ -1,7 +1,7 @@
 {
   "name": "embed-pdfjs-dist",
-  "version": "2.0.87",
-  "main": "build/pdf.js",
+  "version": "2.0.88",
+  "main": "build/index.js",
   "description": "Generic build of Mozilla's PDF.js library. An embedded viewer provided.",
   "keywords": [
     "Mozilla",

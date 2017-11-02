@@ -2274,3 +2274,16 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
     display: none;
   }
 }
+
+.pdf-embedded-viewer{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	
+    background-color: #404040;
+	background-image: url(images/texture.png);
+}
+
+#viewerContainer{
+	box-sizing: content-box;
+}
