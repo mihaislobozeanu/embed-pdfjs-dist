@@ -342,27 +342,6 @@
   margin: 0;
 }
 
-html {
-  height: 100%;
-  width: 100%;
-  /* Font size is needed to make the activity bar the correct size. */
-  font-size: 10px;
-}
-
-body {
-  height: 100%;
-  width: 100%;
-  background-color: #404040;
-  background-image: url(images/texture.png);
-}
-
-body,
-input,
-button,
-select {
-  font: message-box;
-  outline: none;
-}
 
 .hidden {
   display: none !important;
@@ -2279,6 +2258,7 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
 	position: relative;
 	width: 100%;
 	height: 100%;
+	font-size: 10px;
 	
     background-color: #404040;
 	background-image: url(images/texture.png);
